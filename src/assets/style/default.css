@@ -1,0 +1,40 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
+
+body {
+    font-size: 1.5rem;
+    color: #acacac;
+    font-family: Arial;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+* {
+    cursor: none;
+}
+
+:root {
+    --primary: #6257ed;
+    --border-color: #acacac;
+
+    --red: #ff0000;
+    --green: #3fc367;
+}
+
+div.page {
+    display: flex;
+    width: 90vw;
+}
+
+button, select, input {
+    outline: none;
+    border: none;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    font-size: 1.5rem;
+    color: #ffffff;
+    background: var(--primary);
+}
+
+input::placeholder {
+    color: #acacac;
+}

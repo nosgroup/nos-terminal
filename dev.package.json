@@ -1,0 +1,39 @@
+{
+  "build": {
+    "productName": "NosTerminal",
+    "appId": "de.noserp.terminal",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "**/*",
+      "!node_modules/**/*",
+      "!dist/**/*",
+      "!build/**/*",
+      "!src/**/*",
+      "!package-lock.json",
+      "!package.json",
+      "!README.md",
+      "!yarn.lock"
+    ],
+    "win": {
+      "target": "nsis"
+    },
+    "linux": {
+      "target": "deb",
+      "category": "Utility"
+    },
+    "mac": {
+      "category": "public.app-category.utilities",
+      "target": [
+        "dmg",
+        "pkg"
+      ]
+    },
+    "publish": [{
+      "provider": "generic",
+      "url": "http://git.nosgroup.de/releases"
+
+    }]
+  }
+}
